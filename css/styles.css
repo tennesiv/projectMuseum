@@ -11,3 +11,10 @@ header {
 	padding: 20px 0;
 	text-align: center;
 }
+
+nav ul li {
+	color: #fff;
+	text-decoration: none;
+	font-weight: bold;
+	transition: colo 0.3s;
+}
