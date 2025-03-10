@@ -1,110 +1,123 @@
-/* Общие стили для кроссбраузерности */
+/* Общие стили для минимализма */
 * {
   box-sizing: border-box;
-  -webkit-font-smoothing: antialiased; /* Для четкости шрифтов в Safari */
-  -moz-osx-font-smoothing: grayscale; /* Для четкости шрифтов в Firefox на MacOS */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
-/* Body */
 body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f4f4f4;
   margin: 0;
-  font-family: 'Helvetica Neue', Arial, sans-serif;
-  background-color: #f8f9fa;
   color: #333;
   line-height: 1.6;
-  -webkit-text-size-adjust: 100%; /* Для корректного отображения шрифтов на мобильных устройствах */
-  -ms-text-size-adjust: 100%; /* Для корректного отображения шрифтов на мобильных устройствах */
+  padding: 0;
 }
 
-/* Заголовки и навигация */
+/* Заголовок */
 header {
-  background-color: #34495e;
-  color: #fff;
-  padding: 20px;
+  background-color: #2c3e50;
+  color: white;
+  padding: 20px 0;
   text-align: center;
+  font-size: 2.5rem;
 }
 
-header h1 {
+h1 {
   margin: 0;
 }
 
 /* Основной контент */
 main {
-  padding: 40px 20px;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 20px;
 }
 
 section {
-  margin-bottom: 40px;
-  background-color: #fff;
-  padding: 40px 30px;
+  margin: 20px 0;
+  padding: 20px;
+  background-color: white;
   border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  transition: all 0.3s ease;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-section:hover {
-  transform: translateY(-10px);
+h2 {
+  font-size: 1.8rem;
+  color: #2c3e50;
+  margin-bottom: 15px;
 }
 
-section h2 {
-  font-size: 2rem;
+p {
+  font-size: 1.1rem;
+  line-height: 1.6;
   margin-bottom: 20px;
 }
 
-section p {
-  font-size: 1.1rem;
-  line-height: 1.6;
+/* Изображения */
+.intro-img {
+  width: 100%;
+  border-radius: 8px;
+  margin-top: 15px;
+}
+
+footer {
+  background-color: #34495e;
+  color: white;
+  text-align: center;
+  padding: 30px 20px;
+  margin-top: 40px;
+  border-top: 2px solid #fff;
+}
+
+footer a {
+  color: #f39c12;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
 }
 
 /* Кнопки */
 button {
   background-color: #f39c12;
-  color: #fff;
+  color: white;
   border: none;
-  padding: 12px 25px; /* Уменьшил кнопки */
-  font-size: 1.1rem;
-  text-transform: uppercase;
-  border-radius: 30px; /* Уменьшена закругленность */
+  padding: 12px 24px;
+  font-size: 1rem;
+  margin: 10px;
+  border-radius: 30px;
   cursor: pointer;
-  transition: all 0.3s ease;
-  margin-top: 20px; /* Отступ сверху */
-  margin-right: 10px; /* Отступ справа */
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  display: inline-block;
+  transition: background-color 0.3s ease;
 }
 
 button:hover {
   background-color: #e67e22;
-  transform: translateY(-3px);
 }
 
-button:active {
-  transform: translateY(1px);
+button:focus {
+  outline: none;
 }
 
-/* Блок с кнопками */
-section > button {
-  margin-top: 20px; /* Отступ от текста */
-  margin-right: 10px;
-  display: inline-block;
+/* Footer logo */
+.footer-img img {
+  width: 150px;
+  margin-top: 20px;
 }
 
-/* Стилизация контейнера с кнопками */
-section {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 15px;
-}
-
-/* Добавление медиа-запросов для адаптивности */
+/* Медиа-запросы */
 @media screen and (max-width: 768px) {
+  header h1 {
+    font-size: 2rem;
+  }
+
+  .intro-img {
+    width: 100%;
+  }
+
   button {
     padding: 10px 20px;
-    font-size: 1rem;
-  }
-  section {
-    padding: 20px;
-    margin: 20px;
+    font-size: 0.9rem;
   }
 }
