@@ -1,4 +1,4 @@
-/* Общие стили для минимализма */
+/* Общие стили */
 * {
   box-sizing: border-box;
   -webkit-font-smoothing: antialiased;
@@ -7,7 +7,7 @@
 
 body {
   font-family: 'Arial', sans-serif;
-  background-color: #f9f9f9; /* Светлый фон */
+  background-color: #f9f9f9; 
   margin: 0;
   color: #333;
   line-height: 1.6;
@@ -16,14 +16,14 @@ body {
 
 /* Заголовок */
 header {
-  background-color: #000000; /* Черный */
+  background-color: #F5F5DC;
   color: #333;
   padding: 20px 0;
   text-align: center;
-  font-size: 2rem; /* Меньше размер шрифта — изменил */
-  font-weight: 600; /* Сделал шрифт немного жирным для акцента — добавил */
-  letter-spacing: 1px; /* Немного увеличил межбуквенное расстояние — добавил */
-  transition: all 0.3s ease; /* Добавил плавную анимацию — добавил */
+  font-size: 2rem; 
+  font-weight: 600; 
+  letter-spacing: 1px; 
+  transition: all 0.3s ease;
 }
 
 header:hover {
@@ -32,11 +32,10 @@ header:hover {
 
 h1 {
   margin: 0;
-  font-size: 2rem; /* Меньший размер шрифта — изменил */
+  font-size: 2rem; 
   line-height: 1.4;
-  letter-spacing: 2px; /* Слегка увеличил межбуквенное расстояние — добавил */
-  color: #808080; /* Мягкий темно-синий для акцента — добавил */
-}
+  letter-spacing: 2px; 
+  color: #000000; 
 
 /* Основной контент */
 main {
@@ -55,9 +54,9 @@ section {
 
 h2 {
   font-size: 1.8rem;
-  color: #000000; /* Мягкий темно-синий */
+  color: #000000; 
   margin-bottom: 15px;
-  transition: all 0.3s ease; /* Добавил динамику */
+  transition: all 0.3s ease; /* Динамика */
 }
 
 h2:hover {
@@ -79,7 +78,7 @@ p {
 
 /* Кнопки */
 button {
-  background-color: #f7d1b1; /* Постельный желтый */
+  background-color: #f7d1b1;
   color: #333;
   border: none;
   padding: 12px 24px;
@@ -91,8 +90,8 @@ button {
 }
 
 button:hover {
-  background-color: #f1c27d; /* Мягкий оттенок желтого */
-  transform: translateY(-5px); /* Динамика при наведении */
+  background-color: #f1c27d; 
+  transform: translateY(-5px); /* Динамика */
 }
 
 button:focus {
@@ -101,7 +100,7 @@ button:focus {
 
 /* Footer */
 footer {
-  background-color: #c1d3e2; /* Постельный голубой */
+  background-color: #c1d3e2; 
   color: #333;
   text-align: center;
   padding: 30px 20px;
