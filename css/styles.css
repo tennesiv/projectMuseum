@@ -1,4 +1,4 @@
-/* Общие стили */
+/* Общие стили для минимализма */
 * {
   box-sizing: border-box;
   -webkit-font-smoothing: antialiased;
@@ -7,7 +7,7 @@
 
 body {
   font-family: 'Arial', sans-serif;
-  background-color: #f9f9f9; 
+  background-color: #f9f9f9;
   margin: 0;
   color: #333;
   line-height: 1.6;
@@ -16,26 +16,27 @@ body {
 
 /* Заголовок */
 header {
-  background-color: #F5F5DC;
+  background-color: #a8d0e6;
   color: #333;
   padding: 20px 0;
   text-align: center;
-  font-size: 2rem; 
-  font-weight: 600; 
-  letter-spacing: 1px; 
+  font-size: 2rem;
+  font-weight: 600;
+  letter-spacing: 1px;
   transition: all 0.3s ease;
 }
 
 header:hover {
-  transform: translateY(-5px); /* Эффект при наведении на header */
+  transform: translateY(-3px);
 }
 
 h1 {
   margin: 0;
-  font-size: 2rem; 
+  font-size: 2rem;
   line-height: 1.4;
-  letter-spacing: 2px; 
-  color: #000000; 
+  letter-spacing: 2px;
+  color: #4c6a92;
+}
 
 /* Основной контент */
 main {
@@ -54,13 +55,13 @@ section {
 
 h2 {
   font-size: 1.8rem;
-  color: #000000; 
+  color: #4c6a92;
   margin-bottom: 15px;
-  transition: all 0.3s ease; /* Динамика */
+  transition: all 0.3s ease;
 }
 
 h2:hover {
-  transform: translateX(5px); /* Движение при наведении */
+  transform: translateX(5px);
 }
 
 p {
@@ -90,8 +91,8 @@ button {
 }
 
 button:hover {
-  background-color: #f1c27d; 
-  transform: translateY(-5px); /* Динамика */
+  background-color: #f1c27d;
+  transform: translateY(-5px);
 }
 
 button:focus {
@@ -100,7 +101,7 @@ button:focus {
 
 /* Footer */
 footer {
-  background-color: #c1d3e2; 
+  background-color: #c1d3e2;
   color: #333;
   text-align: center;
   padding: 30px 20px;
@@ -117,8 +118,7 @@ footer a:hover {
   text-decoration: underline;
 }
 
-/* Footer logo */
-.footer-img img {
+footer .footer-img img {
   width: 150px;
   margin-top: 20px;
 }
@@ -126,15 +126,11 @@ footer a:hover {
 /* Медиа-запросы */
 @media screen and (max-width: 768px) {
   header {
-    padding: 15px 0; /* Уменьшил отступы на мобильных — добавил */
+    padding: 15px 0;
   }
 
   h1 {
-    font-size: 1.8rem; /* Еще меньше шрифт на мобильных — изменил */
-  }
-
-  .intro-img {
-    width: 100%;
+    font-size: 1.8rem;
   }
 
   button {
@@ -142,3 +138,4 @@ footer a:hover {
     font-size: 0.9rem;
   }
 }
+
