@@ -2,9 +2,9 @@
 <html lang="ru">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Виртуальный музей истории России</title>
-  <link rel="stylesheet" href="css/styles.css">
-  <script src="js/script.ls"></script>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
   <header>
@@ -13,20 +13,26 @@
       <ul>
         <li><a href="drevnaya_rus.html">Древняя Русь</a></li>
         <li><a href="imperiya.html">Российская империя</a></li>
-        <li><a href="ussr.html">СССР</a></li>
+        <li><a href="sssr.html">СССР</a></li>
       </ul>
     </nav>
   </header>
 
   <main>
     <section>
-      <h2>Добро пожаловать!</h2>
-      <p>Исследуй историю России от древних времён до современности!</p>
+      <h2>Добро пожаловать в музей</h2>
+      <p>Здесь вы можете исследовать самые важные моменты истории России, от Древней Руси до современной эпохи.</p>
+      <button onclick="window.location.href='drevnaya_rus.html'">Исследовать Древнюю Русь</button>
+      <button onclick="window.location.href='imperiya.html'">Перейти в Российскую Империю</button>
+      <button onclick="window.location.href='sssr.html'">Откройте для себя СССР</button>
     </section>
   </main>
 
   <footer>
-    <p>&copy; 2025. Проект по истории России.</p>
+    <p>&copy; 2025 Мичил. Все права защищены.</p>
+    <p><a href="https://github.com/ТВОЙ_ЛОГИН/russia-history-museum">Проект на GitHub</a></p>
   </footer>
+
+  <script src="js/script.js"></script>
 </body>
 </html>
