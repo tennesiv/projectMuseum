@@ -7,7 +7,7 @@
 
 body {
   font-family: 'Arial', sans-serif;
-  background-color: #f4f4f4;
+  background-color: #f9f9f9; /* Светлый фон */
   margin: 0;
   color: #333;
   line-height: 1.6;
@@ -16,11 +16,16 @@ body {
 
 /* Заголовок */
 header {
-  background-color: #2c3e50;
-  color: white;
+  background-color: #a8d0e6; /* Постельный голубой */
+  color: #333;
   padding: 20px 0;
   text-align: center;
   font-size: 2.5rem;
+  transition: all 0.3s ease; /* Добавим динамику */
+}
+
+header:hover {
+  transform: translateY(-5px); /* Эффект при наведении на header */
 }
 
 h1 {
@@ -44,8 +49,13 @@ section {
 
 h2 {
   font-size: 1.8rem;
-  color: #2c3e50;
+  color: #4c6a92; /* Мягкий темно-синий */
   margin-bottom: 15px;
+  transition: all 0.3s ease; /* Добавим динамику */
+}
+
+h2:hover {
+  transform: translateX(5px); /* Движение при наведении */
 }
 
 p {
@@ -61,9 +71,32 @@ p {
   margin-top: 15px;
 }
 
+/* Кнопки */
+button {
+  background-color: #f7d1b1; /* Постельный желтый */
+  color: #333;
+  border: none;
+  padding: 12px 24px;
+  font-size: 1rem;
+  margin: 10px;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+button:hover {
+  background-color: #f1c27d; /* Мягкий оттенок желтого */
+  transform: translateY(-5px); /* Динамика при наведении */
+}
+
+button:focus {
+  outline: none;
+}
+
+/* Footer */
 footer {
-  background-color: #34495e;
-  color: white;
+  background-color: #c1d3e2; /* Постельный голубой */
+  color: #333;
   text-align: center;
   padding: 30px 20px;
   margin-top: 40px;
@@ -71,33 +104,12 @@ footer {
 }
 
 footer a {
-  color: #f39c12;
+  color: #4c6a92;
   text-decoration: none;
 }
 
 footer a:hover {
   text-decoration: underline;
-}
-
-/* Кнопки */
-button {
-  background-color: #f39c12;
-  color: white;
-  border: none;
-  padding: 12px 24px;
-  font-size: 1rem;
-  margin: 10px;
-  border-radius: 30px;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-}
-
-button:hover {
-  background-color: #e67e22;
-}
-
-button:focus {
-  outline: none;
 }
 
 /* Footer logo */
