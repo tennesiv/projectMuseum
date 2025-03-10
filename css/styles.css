@@ -49,7 +49,7 @@ section {
 
 h2 {
   font-size: 1.8rem;
-  color: #4c6a92; /* Мягкий темно-синий */
+  color: #000000; /* Мягкий темно-синий */
   margin-bottom: 15px;
   transition: all 0.3s ease; /* Добавим динамику */
 }
