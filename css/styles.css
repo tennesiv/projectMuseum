@@ -20,8 +20,10 @@ header {
   color: #333;
   padding: 20px 0;
   text-align: center;
-  font-size: 2.5rem;
-  transition: all 0.3s ease; /* Добавим динамику */
+  font-size: 2rem; /* Меньше размер шрифта — изменил */
+  font-weight: 600; /* Сделал шрифт немного жирным для акцента — добавил */
+  letter-spacing: 1px; /* Немного увеличил межбуквенное расстояние — добавил */
+  transition: all 0.3s ease; /* Добавил плавную анимацию — добавил */
 }
 
 header:hover {
@@ -30,6 +32,10 @@ header:hover {
 
 h1 {
   margin: 0;
+  font-size: 2rem; /* Меньший размер шрифта — изменил */
+  line-height: 1.4;
+  letter-spacing: 2px; /* Слегка увеличил межбуквенное расстояние — добавил */
+  color: #4c6a92; /* Мягкий темно-синий для акцента — добавил */
 }
 
 /* Основной контент */
@@ -51,7 +57,7 @@ h2 {
   font-size: 1.8rem;
   color: #000000; /* Мягкий темно-синий */
   margin-bottom: 15px;
-  transition: all 0.3s ease; /* Добавим динамику */
+  transition: all 0.3s ease; /* Добавил динамику */
 }
 
 h2:hover {
@@ -120,8 +126,12 @@ footer a:hover {
 
 /* Медиа-запросы */
 @media screen and (max-width: 768px) {
-  header h1 {
-    font-size: 2rem;
+  header {
+    padding: 15px 0; /* Уменьшил отступы на мобильных — добавил */
+  }
+
+  h1 {
+    font-size: 1.8rem; /* Еще меньше шрифт на мобильных — изменил */
   }
 
   .intro-img {
