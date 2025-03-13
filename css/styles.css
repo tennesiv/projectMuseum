@@ -124,9 +124,8 @@ footer .footer-img img {
 }
 
 intro-img {
-  width: 100%;
+  width: 100px;
   height: auto;
-  max-width: 500px;
 }
 
 /* Медиа-запросы */
