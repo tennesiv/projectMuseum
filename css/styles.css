@@ -274,3 +274,52 @@ footer {
   color: #555;
 }
 
+.section-alt {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  margin: 60px 0;
+}
+
+.section-alt.reverse {
+  flex-direction: row-reverse;
+}
+
+.section-content,
+.section-image {
+  flex: 1 1 45%;
+  padding: 20px;
+}
+
+.section-content h2 {
+  font-size: 1.8em;
+  color: #333;
+}
+
+.section-content p {
+  font-size: 1em;
+  color: #666;
+}
+
+.section-image img {
+  width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.1);
+}
+
+/* Для адаптива */
+@media (max-width: 768px) {
+  .section-alt {
+    flex-direction: column;
+  }
+  .section-alt.reverse {
+    flex-direction: column;
+  }
+  .section-content,
+  .section-image {
+    flex: 1 1 100%;
+    text-align: center;
+  }
+}
+
