@@ -123,6 +123,12 @@ footer .footer-img img {
   margin-top: 20px;
 }
 
+intro-img {
+  width: 100%;
+  height: auto;
+  max-width: 500px;
+}
+
 /* Медиа-запросы */
 @media screen and (max-width: 768px) {
   header {
