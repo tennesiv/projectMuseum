@@ -142,20 +142,85 @@ footer .footer-img img {
 
 /* Залы */
 
-.hall-intro {
+/* Общая обёртка страницы */
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #fdfcfb;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+/* Шапка сайта */
+.site-header {
+  background-color: #ececec;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+}
+
+.site-header h1 {
+  margin: 0;
+  color: #5c5c5c;
+}
+
+.site-header nav {
+  margin-top: 10px;
+}
+
+.site-header nav a {
+  text-decoration: none;
+  margin: 0 10px;
+  color: #888;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+.site-header nav a:hover,
+.site-header nav a.active {
+  color: #444;
+}
+
+/* Основной контент */
+.hall-page {
+  padding: 40px 20px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.intro {
   text-align: center;
   margin-bottom: 40px;
 }
 
+.intro h2 {
+  font-size: 2em;
+  margin-bottom: 10px;
+}
+
+.hall-image {
+  width: 100%;
+  max-width: 600px;
+  border-radius: 10px;
+  margin-top: 20px;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.1);
+  transition: transform 0.3s;
+}
+
+.hall-image:hover {
+  transform: scale(1.02);
+}
+
+/* Экспонаты */
 .exhibits {
   background-color: #ffffff;
+  border-radius: 8px;
   padding: 20px;
-  border-radius: 10px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  box-shadow: 0 4px 8px rgba(0,0,0,0.05);
 }
 
 .exhibits h3 {
-  margin-bottom: 15px;
+  margin-top: 0;
 }
 
 .exhibits ul {
@@ -166,4 +231,13 @@ footer .footer-img img {
 .exhibits li {
   padding: 10px 0;
   border-bottom: 1px solid #eee;
+}
+
+/* Футер */
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #ececec;
+  color: #777;
+  margin-top: 40px;
 }
