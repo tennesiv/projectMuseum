@@ -123,10 +123,6 @@ footer .footer-img img {
   margin-top: 20px;
 }
 
-intro-img {
-  width: 100px;
-  height: auto;
-}
 
 /* Медиа-запросы */
 @media screen and (max-width: 768px) {
